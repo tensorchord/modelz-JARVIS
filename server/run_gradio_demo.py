@@ -124,5 +124,6 @@ with gr.Blocks() as demo:
                     ],
         inputs=txt
     )
+    gr.Markdown("Check out [**JARVIS**](https://github.com/microsoft/JARVIS) | Hosted on [**Modelz**](https://docs.modelz.ai/)") 
 
 demo.launch()
