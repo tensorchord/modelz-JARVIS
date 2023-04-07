@@ -50,7 +50,7 @@ RUN update-alternatives --install /usr/bin/python python ${ENVD_PREFIX}/python 1
     update-alternatives --install /usr/bin/pip pip ${ENVD_PREFIX}/pip 1 && \
     update-alternatives --install /usr/bin/pip3 pip3 ${ENVD_PREFIX}/pip3 1
 
-RUN pip3 install torch==1.11.0 torchvision==0.10.0 torchaudio==0.10.0 -f https://download.pytorch.org/whl/cu116/torch_stable.html
+RUN pip3 install torch==1.12.0+cu116 torchvision==0.13.0+cu116 torchaudio==0.12.0+cu116 -f https://download.pytorch.org/whl/cu116/torch_stable.html
 
 COPY requirements.txt /
 
