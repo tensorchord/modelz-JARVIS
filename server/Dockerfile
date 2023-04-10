@@ -56,9 +56,10 @@ COPY requirements.txt /
 
 RUN pip install -r requirements.txt
 
-RUN mkdir -p /workspace
-
 COPY . workspace/
+
+RUN cd /workspace/models && \
+    bash download.sh
 
 WORKDIR /workspace
 
