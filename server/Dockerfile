@@ -62,4 +62,4 @@ COPY . workspace/
 
 WORKDIR /workspace
 
-ENTRYPOINT ["bash", "-c", "python3", "models_server.py", "--config", "config.gradio.yaml", "--mode", "server", "&&", "python3", "run_gradio_demo.py", "--config", "config.gradio.yaml"]
+ENTRYPOINT ["/bin/bash", "entrypoint.sh"]
